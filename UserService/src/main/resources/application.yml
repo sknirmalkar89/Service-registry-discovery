@@ -1,0 +1,20 @@
+server:
+  port: 9093    #default port where the service will be started
+ 
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+    
+ 
+spring:     
+  application:
+    name: user-service   #current service name to be used by the eureka server
+  
+
+ 
+ 

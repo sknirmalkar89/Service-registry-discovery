@@ -1,0 +1,22 @@
+
+server:
+  port: ${PORT:8761}   # Indicate the default PORT where this service will be started
+  
+eureka:
+  client:
+    register-with-eureka: false    #telling the server not to register himself in the service registry
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    
+spring:
+  application:
+    name: eureka
+
+  
+  
+ 
+  
+ 
+
+ 
